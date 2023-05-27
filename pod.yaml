@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: django-app
+  namespace: django-app
+spec:
+  containers:
+  - name: django-app
+    image: dwarika9167/node-app-test-new:latest
+    ports:
+    - containerPort: 8000
